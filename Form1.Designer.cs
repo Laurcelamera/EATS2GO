@@ -54,18 +54,19 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.SalesPanel = new System.Windows.Forms.Panel();
-            this.btnBack2 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnBack2 = new System.Windows.Forms.Button();
+            this.SalesPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.productsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProducts)).BeginInit();
-            this.SalesPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.SalesPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -322,47 +323,15 @@
             this.textBox1.Size = new System.Drawing.Size(72, 38);
             this.textBox1.TabIndex = 0;
             // 
-            // SalesPanel
+            // label8
             // 
-            this.SalesPanel.Controls.Add(this.btnBack2);
-            this.SalesPanel.Controls.Add(this.dateTimePicker1);
-            this.SalesPanel.Controls.Add(this.dataGridView2);
-            this.SalesPanel.Controls.Add(this.dataGridView1);
-            this.SalesPanel.Controls.Add(this.label8);
-            this.SalesPanel.Location = new System.Drawing.Point(40, 18);
-            this.SalesPanel.Name = "SalesPanel";
-            this.SalesPanel.Size = new System.Drawing.Size(1086, 585);
-            this.SalesPanel.TabIndex = 13;
-            // 
-            // btnBack2
-            // 
-            this.btnBack2.Location = new System.Drawing.Point(18, 12);
-            this.btnBack2.Name = "btnBack2";
-            this.btnBack2.Size = new System.Drawing.Size(53, 44);
-            this.btnBack2.TabIndex = 4;
-            this.btnBack2.Text = "<";
-            this.btnBack2.UseVisualStyleBackColor = true;
-            this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(144, 111);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 3;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(570, 51);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(501, 493);
-            this.dataGridView2.TabIndex = 2;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(128, 61);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(230, 32);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "SALES REPORT";
             // 
             // dataGridView1
             // 
@@ -377,15 +346,57 @@
             this.dataGridView1.Size = new System.Drawing.Size(546, 317);
             this.dataGridView1.TabIndex = 1;
             // 
-            // label8
+            // dataGridView2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(128, 61);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(230, 32);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "SALES REPORT";
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(570, 51);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(501, 493);
+            this.dataGridView2.TabIndex = 2;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(144, 111);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // btnBack2
+            // 
+            this.btnBack2.Location = new System.Drawing.Point(18, 12);
+            this.btnBack2.Name = "btnBack2";
+            this.btnBack2.Size = new System.Drawing.Size(53, 44);
+            this.btnBack2.TabIndex = 4;
+            this.btnBack2.Text = "<";
+            this.btnBack2.UseVisualStyleBackColor = true;
+            this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
+            // 
+            // SalesPanel
+            // 
+            this.SalesPanel.Controls.Add(this.button1);
+            this.SalesPanel.Controls.Add(this.btnBack2);
+            this.SalesPanel.Controls.Add(this.dateTimePicker1);
+            this.SalesPanel.Controls.Add(this.dataGridView2);
+            this.SalesPanel.Controls.Add(this.dataGridView1);
+            this.SalesPanel.Controls.Add(this.label8);
+            this.SalesPanel.Location = new System.Drawing.Point(40, 18);
+            this.SalesPanel.Name = "SalesPanel";
+            this.SalesPanel.Size = new System.Drawing.Size(1086, 585);
+            this.SalesPanel.TabIndex = 13;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(18, 89);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(53, 44);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "<";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // HOME
             // 
@@ -409,10 +420,10 @@
             this.productsPanel.ResumeLayout(false);
             this.productsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProducts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.SalesPanel.ResumeLayout(false);
             this.SalesPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -445,13 +456,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Panel SalesPanel;
-        private System.Windows.Forms.Button btnBack2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnSignout;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnBack2;
+        private System.Windows.Forms.Panel SalesPanel;
+        private System.Windows.Forms.Button button1;
     }
 }
 
