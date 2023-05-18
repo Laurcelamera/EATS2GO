@@ -72,5 +72,10 @@ namespace EATS2GO
             SalesPanel.Visible = false;
             ClearAll();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
