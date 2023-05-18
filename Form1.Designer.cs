@@ -60,7 +60,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnBack2 = new System.Windows.Forms.Button();
             this.SalesPanel = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.mainPanel.SuspendLayout();
             this.productsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProducts)).BeginInit();
@@ -378,7 +377,6 @@
             // 
             // SalesPanel
             // 
-            this.SalesPanel.Controls.Add(this.label9);
             this.SalesPanel.Controls.Add(this.btnBack2);
             this.SalesPanel.Controls.Add(this.dateTimePicker1);
             this.SalesPanel.Controls.Add(this.dataGridView2);
@@ -388,15 +386,6 @@
             this.SalesPanel.Name = "SalesPanel";
             this.SalesPanel.Size = new System.Drawing.Size(1086, 585);
             this.SalesPanel.TabIndex = 13;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(48, 130);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 16);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "TEST";
             // 
             // HOME
             // 
@@ -463,7 +452,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnBack2;
         private System.Windows.Forms.Panel SalesPanel;
-        private System.Windows.Forms.Label label9;
     }
 }
 
