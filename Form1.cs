@@ -83,7 +83,10 @@ namespace EATS2GO
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            
+            Menu form2= new Menu();
+            form2.Show();
+            this.Hide();
+            this.Close();
         }
     }
 }
