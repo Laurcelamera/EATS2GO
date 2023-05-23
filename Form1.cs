@@ -86,7 +86,7 @@ namespace EATS2GO
             Menu form2= new Menu();
             form2.Show();
             this.Hide();
-            this.Close();
+       
         }
     }
 }

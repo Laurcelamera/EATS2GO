@@ -22,7 +22,7 @@ namespace EATS2GO
             HOME form1 = new HOME();
             form1.Show();
             this.Hide();
-            this.Close();
+            
         }
 
         private void btnFood_Click(object sender, EventArgs e)
