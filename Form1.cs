@@ -16,14 +16,12 @@ namespace EATS2GO
         {
             InitializeComponent();
         }
-
         private void HOME_Load(object sender, EventArgs e)
         {
             mainPanel.Visible = false;
-            productsPanel.Visible = false;
+            InventoryPanel.Visible = false;
             SalesPanel.Visible = false;
         }
-
         private void btnSignin_Click_1(object sender, EventArgs e)
         {
             if (txtUsername.Text == "admin" && txtPassword.Text == "password")
@@ -43,15 +41,16 @@ namespace EATS2GO
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
-        {
+        { 
             mainPanel.Visible = false;
-            productsPanel.Visible = true;
+            InventoryPanel.Visible = true;
+            SalesPanel.Visible = false;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             mainPanel.Visible = true;
-            productsPanel.Visible = false;
+            InventoryPanel.Visible = false;
         }
 
         private void btnBack2_Click(object sender, EventArgs e)
@@ -63,19 +62,28 @@ namespace EATS2GO
         private void btnReports_Click(object sender, EventArgs e)
         {
             SalesPanel.Visible = true;
+            mainPanel.Visible = false;
+            InventoryPanel.Visible = false;
         }
 
         private void btnSignout_Click(object sender, EventArgs e)
         {
             mainPanel.Visible = false;
-            productsPanel.Visible = false;
+            InventoryPanel.Visible = false;
             SalesPanel.Visible = false;
-            ClearAll();
+            ClearAll(); 
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void btnInvBack_Click(object sender, EventArgs e)
         {
+            mainPanel.Visible = true;
+            SalesPanel.Visible = false;
+            InventoryPanel.Visible = false;
+        }
 
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
